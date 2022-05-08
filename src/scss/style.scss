@@ -4,9 +4,14 @@
 @import "../../node_modules/swiper/swiper.scss";
 @import "fonts";
 
+$yellow-color: #FFFF33;
+$black-color: #222;
+$white-color: #fff;
+$grey-color: yellow;
+
 body {
-   background-color: #222;
-   color: yellow;
+   background-color: $black-color;
+   color: $yellow-color;
    min-height: 100vh;
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
@@ -15,10 +20,11 @@ body {
 .header {
    padding: 20px 0;
    width: 100%;
+   color: $white-color;
 
    &__logo {
       text-decoration: none;
-      color: yellow;
+      color: $yellow-color;
       margin-right: 30px;
    }
 
@@ -45,30 +51,34 @@ body {
    &__link {
       display: block;
       text-decoration: none;
-      color: yellow;
+      color: $yellow-color;
       font-size: 16px;
       padding: 10px 20px;
       border-radius: 5px;
       font-size: inherit;
+      transform: scale(1);
+      transition: all .2s;
 
       i {
-         color: yellow;
+         color: $yellow-color;
          margin-right: 10px;
       }
    }
 
    &__link:hover,
-   &__link.active,
    &__link:hover i {
       cursor: pointer;
-      background-color: yellow;
+      transform: scale(1.1);
+      color: $yellow-color;
+   }
+
+   &__link.active {
+      background-color: $yellow-color;
       color: #222;
    }
 }
 
 .submenu {
-
-
    &__list {
       list-style: none;
       display: none;
@@ -81,7 +91,7 @@ body {
    &__link {
       display: block;
       text-decoration: none;
-      color: yellow;
+      color: $yellow-color;
       font-size: 16px;
       padding: 10px 20px;
       border-radius: 5px;
@@ -90,8 +100,8 @@ body {
 
    &__link:hover {
       cursor: pointer;
-      background-color: yellow;
-      color: #222;
+      background-color: $yellow-color;
+      color: $black-color;
    }
 }
 
@@ -139,9 +149,9 @@ body {
 
 .card {
    width: 300px;
-   background-color: #fff;
+   background-color: $white-color;
    border-radius: 5px;
-   color: #222;
+   color: $black-color;
    margin: 0 auto 20px auto;
    white-space: nowrap;
 
@@ -180,7 +190,7 @@ body {
 
    &__button {
       border: none;
-      background-color: yellow;
+      background-color: $yellow-color;
       padding: 10px 15px;
       margin: 20px 0;
       color: #222;
