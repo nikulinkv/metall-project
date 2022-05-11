@@ -40,17 +40,17 @@ export function tabs() {
 
 export function accordeon() {
    document.querySelectorAll('.acc-trigger').forEach(function (accTrigger) {
-      var parent = accTrigger.nextElementSibling;
+      var nextElement = accTrigger.nextElementSibling;
 
       accTrigger.addEventListener('click', function (e) {
-         if (parent.classList.contains('active')) {
-            parent.classList.remove('active');
+         if (nextElement.classList.contains('active')) {
+            nextElement.classList.remove('active');
          }
          else {
             document.querySelectorAll('.submenu__list').forEach(function (item) {
                item.classList.remove('active');
             });
-            parent.classList.add('active');
+            nextElement.classList.add('active');
          }
       })
    });

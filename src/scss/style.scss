@@ -9,6 +9,16 @@ $black-color: #222;
 $white-color: #fff;
 $grey-color: yellow;
 
+.h2 {
+   font-weight: bold;
+   margin-bottom: 30px;
+   letter-spacing: 3px;
+}
+
+section {
+   padding: 40px 0;
+}
+
 body {
    background-color: $black-color;
    color: $yellow-color;
@@ -20,94 +30,138 @@ body {
 .header {
    padding: 20px 0;
    width: 100%;
-   color: $white-color;
+   background-color: $yellow-color;
 
    &__logo {
       text-decoration: none;
-      color: $yellow-color;
+      color: $black-color;
       margin-right: 30px;
    }
 
    &__contacts {
       align-self: flex-end;
    }
-}
 
-.menu {
-   &__list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-   }
+   .menu {
+      &__list {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+      }
 
-   &__item {
-      display: inline-block;
-   }
+      &__item {
+         display: inline-block;
+      }
 
-   &__item:not(:last-child) {
-      margin-right: 20px;
-   }
+      &__item:not(:last-child) {
+         margin-right: 20px;
+      }
 
-   &__link {
-      display: block;
-      text-decoration: none;
-      color: $yellow-color;
-      font-size: 16px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: inherit;
-      transform: scale(1);
-      transition: all .2s;
+      &__link {
+         display: block;
+         text-decoration: none;
+         color: $black-color;
+         font-size: 16px;
+         padding: 10px 20px;
+         border-radius: 5px;
+         transition: all 0.2s;
 
-      i {
+         i {
+            transition: all 0.2s;
+            color: $black-color;
+            margin-right: 10px;
+            background-color: transparent;
+         }
+      }
+
+      &__link:hover,
+      &__link:hover {
+         cursor: pointer;
+         background-color: $black-color;
          color: $yellow-color;
-         margin-right: 10px;
+      }
+
+      &__link:hover i {
+         cursor: pointer;
+         color: $yellow-color;
+      }
+
+      &__link.active {
+         background-color: $black-color;
+         color: $yellow-color;
       }
    }
 
-   &__link:hover,
-   &__link:hover i {
-      cursor: pointer;
-      transform: scale(1.1);
-      color: $yellow-color;
-   }
-
-   &__link.active {
-      background-color: $yellow-color;
-      color: #222;
+   .phone {
+      &__link {
+         margin-right: 20px;
+      }
    }
 }
 
-.submenu {
-   &__list {
-      list-style: none;
-      display: none;
+.catalog {
+   .menu {
+      &__list {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+      }
+
+      &__item {
+         display: inline-block;
+      }
+
+      &__item:not(:last-child) {
+         margin-right: 20px;
+      }
+
+      &__link {
+         display: block;
+         text-decoration: none;
+         color: $yellow-color;
+         font-size: 16px;
+         padding: 10px 20px;
+         border-radius: 5px;
+         font-size: inherit;
+         transition: all .2s;
+      }
+
+      &__link:not(.active):hover {
+         cursor: pointer;
+         transform: scaleX(1.1);
+      }
+
+      &__link.active {
+         color: $black-color;
+         background-color: $yellow-color;
+      }
    }
 
-   &__list.active {
-      display: block;
-   }
+   .submenu {
+      &__list {
+         list-style: none;
+         display: none;
+      }
 
-   &__link {
-      display: block;
-      text-decoration: none;
-      color: $yellow-color;
-      font-size: 16px;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: inherit;
-   }
+      &__list.active {
+         display: block;
+      }
 
-   &__link:hover {
-      cursor: pointer;
-      background-color: $yellow-color;
-      color: $black-color;
-   }
-}
+      &__link {
+         display: block;
+         text-decoration: none;
+         color: $yellow-color;
+         font-size: 16px;
+         padding: 10px 20px;
+         border-radius: 5px;
+         font-size: inherit;
+      }
 
-.phone {
-   &__link {
-      margin-right: 20px;
+      &__link:hover {
+         cursor: pointer;
+         background-color: $yellow-color;
+         color: $black-color;
+      }
    }
 }
 
@@ -125,9 +179,11 @@ body {
    }
 }
 
-.sidebar {
-   padding: 30px 0;
+.catalog {
+   min-height: 650px;
+}
 
+.sidebar {
    .menu {
       &__item {
          display: block;
@@ -137,7 +193,6 @@ body {
 }
 
 .tab-content {
-   padding: 30px 0;
    display: none;
 }
 
@@ -190,13 +245,149 @@ body {
 
    &__button {
       border: none;
-      background-color: $yellow-color;
+      background-color: $black-color;
       padding: 10px 15px;
       margin: 20px 0;
-      color: #222;
+      color: $yellow-color;
       font-weight: bold;
       letter-spacing: 3px;
       text-transform: uppercase;
+   }
+
+   &__button:hover {
+      background-color: $yellow-color;
+      color: $black-color;
+   }
+}
+
+.work {
+   color: $black-color;
+   background-color: $yellow-color;
+
+   .h2 {
+      text-align: center;
+   }
+
+   .h5 {
+      margin: 20px 0;
+   }
+
+   i {
+      font-size: 50px;
+   }
+
+   &__card {
+      text-align: center;
+   }
+
+   .btn {
+      max-width: max-content;
+      margin: 0 auto;
+      padding: 15px 40px;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      background-color: $black-color;
+      color: $yellow-color;
+      border: 1px $black-color solid;
+      transition: all 0.3s;
+   }
+
+   .btn:hover {
+      background-color: $yellow-color;
+      color: $black-color;
+   }
+}
+
+.contacts {
+   .address {
+
+      .phone__link,
+      .email__link {
+         text-decoration: none;
+         color: $yellow-color;
+         font-size: 16px;
+         padding: 10px 20px;
+         border-radius: 5px;
+         transition: all 0.2s;
+         max-width: max-content;
+
+         i {
+            margin-right: 10px;
+         }
+      }
+
+      .phone__link:hover,
+      .email__link:hover {
+         color: $black-color;
+         background-color: $yellow-color;
+      }
+   }
+
+   form {
+      background-color: $yellow-color;
+      padding: 30px 10px;
+      border-radius: 5px;
+
+      input {
+         padding: 10px;
+         border: none;
+         border-radius: 5px 5px 0 0;
+         border-bottom: 1px $black-color solid;
+         background-color: $yellow-color;
+         color: $black-color;
+         outline: $black-color;
+         margin-bottom: 20px;
+      }
+
+      .btn {
+         max-width: max-content;
+         margin: 0 auto;
+         padding: 15px 40px;
+         text-transform: uppercase;
+         font-weight: bold;
+         letter-spacing: 1.5px;
+         background-color: $black-color;
+         color: $yellow-color;
+         border: 1px $black-color solid;
+         transition: all 0.3s;
+      }
+
+      .btn:hover {
+         background-color: $yellow-color;
+         color: $black-color;
+      }
+   }
+
+   .menu {
+      &__list {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+      }
+
+      &__link {
+         max-width: max-content;
+         display: block;
+         text-decoration: none;
+         color: $yellow-color;
+         font-size: 16px;
+         padding: 10px 20px;
+         border-radius: 5px;
+         transition: all 0.2s;
+      }
+
+      &__link:hover,
+      &__link:hover {
+         cursor: pointer;
+         background-color: $yellow-color;
+         color: $black-color;
+      }
+
+      &__link.active {
+         color: $black-color;
+         background-color: $yellow-color;
+      }
    }
 }
 

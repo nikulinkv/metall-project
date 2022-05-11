@@ -17,19 +17,61 @@
             </div>
          </div>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3">
-               @@include('html/aside.html', {})
-            </div>
-            <div class="col-lg-9">
-               @@include('html/wood.html', {})
-               @@include('html/metall.html', {})
-               @@include('html/zbi.html', {})
-               @@include('html/spectechnika.html', {})
+      <section class="catalog">
+         <div class="container">
+            <div class="row">
+               <h2 class="h2">Каталог</h2>
+               <div class="col-lg-3">
+                  @@include('html/aside.html', {})
+               </div>
+               <div class="col-lg-9">
+                  @@include('html/wood.html', {})
+                  @@include('html/metall.html', {})
+                  @@include('html/zbi.html', {})
+                  @@include('html/spectechnika.html', {})
+               </div>
             </div>
          </div>
-      </div>
+      </section>
+      <section class="work">
+         <div class="container">
+            <div class="row">
+               <h2 class="h2">Схема работы</h2>
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-calculator"></i>
+                     <h5 class="h5">Рассчет цены</h5>
+                     <p>Расчет стоимости поставки товара, расчет доставки, расчет погрузочно-разгрузочных работ</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-file-earmark-text"></i>
+                     <h5 class="h5">Подписание договора</h5>
+                     <p>Согласование товаров, услуг и стоимости. подписание договора</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-wallet"></i>
+                     <h5 class="h5">Внесение предоплаты</h5>
+                     <p>Внесение предоплаты по договору</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-boxes"></i>
+                     <h5 class="h5">Поставка товара</h5>
+                     <p>Поставка товара / предоставление услуг согласно договора.</p>
+                  </div>
+               </div>
+               <button class="btn">Рассчитать стоимость</button>
+            </div>
+         </div>
+      </section>
    </main>
    @@include('html/footer.html', {})
    <script src="js/app.min.js"></script>

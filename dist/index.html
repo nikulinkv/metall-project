@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220511144309">
    <title>Главная</title> 
 </head>
 
@@ -17,6 +17,7 @@
             <nav class="nav__menu">
                <ul class="menu__list">
                   <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                  <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
                   <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
                   <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                </ul>
@@ -35,17 +36,19 @@
       <div class="container-fluid p-0">
          <div class="swiper">
             <div class="swiper-wrapper">
-               <div class="swiper-slide"><img src="img/wood.jpg" alt=""></div>
-               <div class="swiper-slide"><img src="img/metall.jpg" alt=""></div>
-               <div class="swiper-slide"><img src="img/zbi.jpg" alt=""></div>
-               <div class="swiper-slide"><img src="img/technika.jpg" alt=""></div>
+               <div class="swiper-slide"><picture><source srcset="img/wood.webp" type="image/webp"><img src="img/wood.jpg" alt=""></picture></div>
+               <div class="swiper-slide"><picture><source srcset="img/metall.webp" type="image/webp"><img src="img/metall.jpg" alt=""></picture></div>
+               <div class="swiper-slide"><picture><source srcset="img/zbi.webp" type="image/webp"><img src="img/zbi.jpg" alt=""></picture></div>
+               <div class="swiper-slide"><picture><source srcset="img/technika.webp" type="image/webp"><img src="img/technika.jpg" alt=""></picture></div>
             </div>
          </div>
       </div>
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-3">
-               <aside class="sidebar">
+      <section class="catalog">
+         <div class="container">
+            <div class="row">
+               <h2 class="h2">Каталог</h2>
+               <div class="col-lg-3">
+                  <aside class="sidebar">
    <nav class="nav__menu">
       <ul class="menu__list">
          <li class="menu__item">
@@ -140,12 +143,12 @@
       </ul>
    </nav>
 </aside>
-            </div>
-            <div class="col-lg-9">
-               <div class="content__wood tab-content active" data-tab="1.1">
+               </div>
+               <div class="col-lg-9">
+                  <div class="content__wood tab-content active" data-tab="1.1">
    <div class="card d-flex flex-column w-xl-100">
       <div class="card__image">
-         <img src="img/wood.jpg" alt="">
+         <picture><source srcset="img/wood.webp" type="image/webp"><img src="img/wood.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -162,7 +165,7 @@
    </div>
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/wood.jpg" alt="">
+         <picture><source srcset="img/wood.webp" type="image/webp"><img src="img/wood.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -179,7 +182,7 @@
    </div>
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/wood.jpg" alt="">
+         <picture><source srcset="img/wood.webp" type="image/webp"><img src="img/wood.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -199,7 +202,7 @@
 <div class="content__wood tab-content" data-tab="1.2">
    <div class="card d-flex flex-column w-xl-100">
       <div class="card__image">
-         <img src="img/pilomat.jpg" alt="">
+         <picture><source srcset="img/pilomat.webp" type="image/webp"><img src="img/pilomat.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -216,7 +219,7 @@
    </div>
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/pilomat.jpg" alt="">
+         <picture><source srcset="img/pilomat.webp" type="image/webp"><img src="img/pilomat.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -233,7 +236,7 @@
    </div>
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/pilomat.jpg" alt="">
+         <picture><source srcset="img/pilomat.webp" type="image/webp"><img src="img/pilomat.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -253,7 +256,7 @@
 <div class="content__wood tab-content" data-tab="1.3">
    <div class="card d-flex flex-column w-xl-100">
       <div class="card__image">
-         <img src="img/kruglyak.jpg" alt="">
+         <picture><source srcset="img/kruglyak.webp" type="image/webp"><img src="img/kruglyak.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -270,7 +273,7 @@
    </div>
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/kruglyak.jpg" alt="">
+         <picture><source srcset="img/kruglyak.webp" type="image/webp"><img src="img/kruglyak.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -287,7 +290,7 @@
    </div>
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/kruglyak.jpg" alt="">
+         <picture><source srcset="img/kruglyak.webp" type="image/webp"><img src="img/kruglyak.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -303,10 +306,10 @@
       </div>
    </div>
 </div>
-               <div class="content__metall tab-content" data-tab="2.1">
+                  <div class="content__metall tab-content" data-tab="2.1">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/armatura.jpg" alt="">
+         <picture><source srcset="img/armatura.webp" type="image/webp"><img src="img/armatura.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -326,7 +329,7 @@
 <div class="content__metall tab-content" data-tab="2.2">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/profil.jpeg" alt="">
+         <picture><source srcset="img/profil.webp" type="image/webp"><img src="img/profil.jpeg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -346,7 +349,7 @@
 <div class="content__metall tab-content" data-tab="2.3">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/truba.jpg" alt="">
+         <picture><source srcset="img/truba.webp" type="image/webp"><img src="img/truba.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -366,7 +369,7 @@
 <div class="content__metall tab-content" data-tab="2.4">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/proflist.jpg" alt="">
+         <picture><source srcset="img/proflist.webp" type="image/webp"><img src="img/proflist.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -386,7 +389,7 @@
 <div class="content__metall tab-content" data-tab="2.5">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/balka.jpg" alt="">
+         <picture><source srcset="img/balka.webp" type="image/webp"><img src="img/balka.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -406,7 +409,7 @@
 <div class="content__metall tab-content" data-tab="2.6">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/shveller.jpg" alt="">
+         <picture><source srcset="img/shveller.webp" type="image/webp"><img src="img/shveller.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -426,7 +429,7 @@
 <div class="content__metall tab-content" data-tab="2.7">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/ugolok.jpg" alt="">
+         <picture><source srcset="img/ugolok.webp" type="image/webp"><img src="img/ugolok.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -442,10 +445,10 @@
       </div>
    </div>
 </div>
-               <div class="content__zbi tab-content" data-tab="3.1">
+                  <div class="content__zbi tab-content" data-tab="3.1">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/zbi.jpg" alt="">
+         <picture><source srcset="img/zbi.webp" type="image/webp"><img src="img/zbi.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -465,7 +468,7 @@
 <div class="content__zbi tab-content" data-tab="3.2">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/svai.jpg" alt="">
+         <picture><source srcset="img/svai.webp" type="image/webp"><img src="img/svai.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -485,7 +488,7 @@
 <div class="content__zbi tab-content" data-tab="3.3">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/b_kolca.jpg" alt="">
+         <picture><source srcset="img/b_kolca.webp" type="image/webp"><img src="img/b_kolca.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -505,7 +508,7 @@
 <div class="content__zbi tab-content" data-tab="3.4">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/gazoblock.jpg" alt="">
+         <picture><source srcset="img/gazoblock.webp" type="image/webp"><img src="img/gazoblock.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -525,7 +528,7 @@
 <div class="content__zbi tab-content" data-tab="3.5">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/kirpich.jpg" alt="">
+         <picture><source srcset="img/kirpich.webp" type="image/webp"><img src="img/kirpich.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -545,7 +548,7 @@
 <div class="content__zbi tab-content" data-tab="3.6">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/beton.jpg" alt="">
+         <picture><source srcset="img/beton.webp" type="image/webp"><img src="img/beton.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -565,7 +568,7 @@
 <div class="content__zbi tab-content" data-tab="3.7">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/sheben.jpg" alt="">
+         <picture><source srcset="img/sheben.webp" type="image/webp"><img src="img/sheben.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -581,10 +584,10 @@
       </div>
    </div>
 </div>
-               <div class="content__spectechnika tab-content" data-tab="4.1">
+                  <div class="content__spectechnika tab-content" data-tab="4.1">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/manipulyator.jpg" alt="">
+         <picture><source srcset="img/manipulyator.webp" type="image/webp"><img src="img/manipulyator.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -604,7 +607,7 @@
 <div class="content__spectechnika tab-content" data-tab="4.2">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/avtokran.jpg" alt="">
+         <picture><source srcset="img/avtokran.webp" type="image/webp"><img src="img/avtokran.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -624,7 +627,7 @@
 <div class="content__spectechnika tab-content" data-tab="4.3">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/ekskovator.jpg" alt="">
+         <picture><source srcset="img/ekskovator.webp" type="image/webp"><img src="img/ekskovator.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -644,7 +647,7 @@
 <div class="content__spectechnika tab-content" data-tab="4.4">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/dlinnomer.jpg" alt="">
+         <picture><source srcset="img/dlinnomer.webp" type="image/webp"><img src="img/dlinnomer.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -664,7 +667,7 @@
 <div class="content__spectechnika tab-content" data-tab="4.5">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/samosval.jpg" alt="">
+         <picture><source srcset="img/samosval.webp" type="image/webp"><img src="img/samosval.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -684,7 +687,7 @@
 <div class="content__spectechnika tab-content" data-tab="4.6">
    <div class="card d-flex flex-column">
       <div class="card__image">
-         <img src="img/tonar.jpg" alt="">
+         <picture><source srcset="img/tonar.webp" type="image/webp"><img src="img/tonar.jpg" alt=""></picture>
       </div>
       <div class="card__body d-flex flex-column">
          <h3 class="card__title">
@@ -700,12 +703,85 @@
       </div>
    </div>
 </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="work">
+         <div class="container">
+            <div class="row">
+               <h2 class="h2">Схема работы</h2>
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-calculator"></i>
+                     <h5 class="h5">Рассчет цены</h5>
+                     <p>Расчет стоимости поставки товара, расчет доставки, расчет погрузочно-разгрузочных работ</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-file-earmark-text"></i>
+                     <h5 class="h5">Подписание договора</h5>
+                     <p>Согласование товаров, услуг и стоимости. подписание договора</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-wallet"></i>
+                     <h5 class="h5">Внесение предоплаты</h5>
+                     <p>Внесение предоплаты по договору</p>
+                  </div>
+               </div>
+
+               <div class="col-md-6 col-lg-3">
+                  <div class="work__card">
+                     <i class="bi bi-boxes"></i>
+                     <h5 class="h5">Поставка товара</h5>
+                     <p>Поставка товара / предоставление услуг согласно договора.</p>
+                  </div>
+               </div>
+               <button class="btn">Рассчитать стоимость</button>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer>
+   <section class="contacts">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-4">
+               <nav class="nav__menu">
+                  <ul class="menu__list">
+                     <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+                     <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                     <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                     <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="col-lg-4">
+               <address class="address d-flex flex-column">
+                  <a href="#" type="tel:+79998887766" class="phone__link"><i class="bi bi-telephone"></i>8
+                     999
+                     888 77 66</a>
+                  <a href="#" type="e-mail: blabla@mail.ru" class="email__link"><i
+                        class="bi bi-envelope"></i>blabla@mail.ru</a>
+               </address>
+            </div>
+            <div class="col-lg-4">
+               <form class="d-flex flex-column" action="">
+                  <input type="tel" name="phone" id="phone" placeholder="+7 999 888 77 66">
+                  <input type="text" name="name" id="name" placeholder="Ваше Имя">
+                  <button class="btn">Заказать звонок</button>
+               </form>
             </div>
          </div>
       </div>
-   </main>
-   <footer></footer>
-   <script src="js/app.min.js"></script>
+   </section>
+</footer>
+   <script src="js/app.min.js?_v=20220511144309"></script>
 </body>
 
 </html>
